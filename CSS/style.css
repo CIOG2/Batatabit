@@ -1,0 +1,659 @@
+/*
+    1.Posicionamiento
+    2.Modelo de caja (box model)
+    3.Tipografia
+    4.Visuales
+    5.Otros
+
+  FUENTES:
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+*/
+:root{
+  /*colores*/
+  --bitcoin-orange: #F7931A;
+  --soft-orange: #FFE9D5;
+  --secondary-blue: #1A9AF7;
+  --warm-black: #282623;
+  --black: #201E1C;
+  --grey: #BABABA;
+  --off-white: #FAF8F7;
+  --just-white: #FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family:'DM Sans',sans-serif;
+}
+
+header{
+  position: static;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+.header--title-container{
+    width: 90%;
+    max-width: 900px;
+    min-width: 288px;
+    height: 334px;
+    margin-top: 30px;
+    text-align: center;
+    align-self: center;
+}
+header img{
+    width: 150px;
+    height: 34px;
+    margin-top: 30px;
+    align-self: center;
+}
+.header--title-container > h1{
+    font-size: 2.4rem;
+    font-weight: bold; /*se invoca la sentencio bold*/
+    line-height: 2.6rem;  /*separa el interlineado*/
+    color: var(--just-white);
+  }
+.header--title-container > p{
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+
+}
+.header--title-container .header--button{
+    position: absolute;
+    left: calc(50% - 114.5px);
+    top: 220px;
+    margin-top: 35px;
+    display: block;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*sombra*/
+    box-shadow: 0px 4px 8px rgba(0,0,0,1);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+    }
+
+.header--button > span{
+      display: inline-block;
+      width: 13px;
+      height: 8px;
+      margin-left: 10px;
+      background-image: url('/MOBILE_FIRTS/icons/down-arrow.svg');
+}
+
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--of-white);
+}
+
+.main-intercambio-container{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;    /*ayuda a centra*/
+    width: 90%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    min-width: 320px;
+    max-width: 900px;
+
+}
+.main-intercambio-container .foto-intercanbio{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url('/MOBILE_FIRTS/icons/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;  /*Centra la imagen*/
+    background-repeat: no-repeat; /*evita que se  repita la imagen cuando el contenedor se haga mas grande*/
+}
+.main-intercambio-container--title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--black);
+}
+.main-intercambio-container--title p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.main-table-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    background-color: white;
+}
+/*----------------------------------------------------hacia abajo------------------------------------------------------*/
+/*---------------------------------------------------tabla modedas-----------------------------------------------------*/
+/*---------------------------------------------------tabla modedas-----------------------------------------------------*/
+.main-divisa-table{
+    width: 70%;
+    height: 360px;
+    min-width: 320px;
+    max-width: 500px;
+    font-family: 'Inter', sans-serif;
+}
+.main-divisa-table .divisa-table--titulo{
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #FF9536;
+    margin-top: 20px;
+}
+.divisa-table--container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+    min-width: 320px;
+    max-width: 330px;
+}
+.divisa-table--container table{
+    width: 60%;
+    height: 100%;
+}
+.divisa-table--container td{
+    width: 50%;
+    height: auto;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 500;
+    color: #B5B0AC;
+    background-color: #FBFCFC;
+  }
+.divisa-table--container .table__top-izquierda{
+    border-radius: 15px 0 0 0;
+  }
+.divisa-table--container .table__top-derecha{
+    border-radius: 0 15px 0 0;
+  }
+.divisa-table--container .table__buttom-izquierda{
+    border-radius: 0 0 0 15px;
+  }
+.divisa-table--container .table__buttom-derecha{
+    border-radius: 0 0 15px 0;
+  }
+
+.divisa-table--container .table__derecha{
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: normal;
+    color: #757575;
+}
+.divisa-table--container .caida{
+      display: inline-block;
+      margin-left: 10px;
+      width: 15px;
+      height: 15px;
+      background-image: url('/MOBILE_FIRTS/icons/trending-down.svg');
+      background-size: cover;
+      background-position: center;  /*Centra la imagen*/
+      background-repeat: no-repeat; /*evita que se  repita la imagen cuando el contenedor se haga mas grande*/
+}
+.divisa-table--container .subida{
+      display: inline-block;
+      margin-left: 10px;
+      width: 15px;
+      height: 15px;
+      background-image: url('/MOBILE_FIRTS/icons/trending-up.svg');
+      background-size: cover;
+      background-position: center;  /*Centra la imagen*/
+      background-repeat: no-repeat; /*evita que se  repita la imagen cuando el contenedor se haga mas grande*/
+}
+.divisa-table--date{
+      width: 190px;
+      height: 30px;
+      margin: 0 auto;
+      margin-top: -10px;
+      padding: 8px;
+      border-radius: 8px;
+}
+.divisa-table--date p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+/*---------------------------------------------------tabla modedas-----------------------------------------------------*/
+/*---------------------------------------------------tabla modedas-----------------------------------------------------*/
+
+
+/*---------------------------------------------------tabla comision-----------------------------------------------------*/
+/*---------------------------------------------------tabla comision------------------------------------------------------*/
+
+.main-divisa-table{
+    width: 70%;
+    height: 360px;
+    min-width: 320px;
+    max-width: 500px;
+    font-family: 'Inter', sans-serif;
+}
+.main-comision-table .comision-table--titulo{
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--secondary-blue);
+    margin-top: 20px;
+}
+.comision-table--container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+    min-width: 320px;
+    max-width: 330px;
+}
+.comision-table--container table{
+    width: 60%;
+    height: 100%;
+}
+.comision-table--container td{
+    width: 50%;
+    height: auto;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 500;
+    color: #B5B0AC;
+    background-color: #FBFCFC;
+  }
+.comision-table--container .table__top-izquierda{
+    border-radius: 15px 0 0 0;
+  }
+.comision-table--container .table__top-derecha{
+    border-radius: 0 15px 0 0;
+  }
+.comision-table--container .table__buttom-izquierda{
+    border-radius: 0 0 0 15px;
+  }
+.comision-table--container .table__buttom-derecha{
+    border-radius: 0 0 15px 0;
+  }
+
+.comision-table--container .table__derecha{
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: normal;
+    color: #757575;
+}
+.comision-table--date{
+      width: 190px;
+      height: 30px;
+      margin: 0 auto;
+      margin-top: -10px;
+      padding: 8px;
+      border-radius: 8px;
+}
+.comision-table--date p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+/*---------------------------------------------------tabla comision-----------------------------------------------------*/
+/*---------------------------------------------------tabla comision------------------------------------------------------*/
+/*-----------------------------------------------------hacia ariba------------------------------------------------------*/
+
+
+.main-producto-detalle{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: var(--black);
+}
+
+.main-producto-detalle .papita{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    right: calc(50% - 20px);
+    background-image: url('/MOBILE_FIRTS/icons/patata.svg');
+  }
+.producto-detalle--introduccion{
+    width: 90%;
+    height: auto;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+.producto-detalle--introduccion h2{
+    margin-top: 50px;
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+}
+.producto-detalle--introduccion{
+    margin-bottom: 24px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #808080;
+}
+
+/*-----------------------------------------------------hacia abajo------------------------------------------------------*/
+/*------------------------------------------------------articulos------------------------------------------------------*/
+.contenedor--tarjetas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-producto-detalle .producto-tarjetas--contenedor{
+    margin: 0 auto;
+    padding-bottom: 19px;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    background-color: var(--warm-black);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,1);
+}
+.producto-tarjetas--contenedor .producto--tarjeta-titulo{
+    position: relative;
+    text-align: left;
+    left: 16px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    line-height: 1,8rem;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+}
+.producto-tarjetas--contenedor .producto--tarjeta-curpo{
+  position: relative;
+  text-align: left;
+  left: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #808080;
+  width: 85%;
+}
+/*------------------------------------------------------articulos------------------------------------------------------*/
+/*-----------------------------------------------------hacia ariba------------------------------------------------------*/
+
+
+/*-----------------------------------------------------hacia abajo------------------------------------------------------*/
+/*---------------------------------------------------Imagenes articulos--------------------------------------------------*/
+.producto-tarjetas--contenedor .reloj{
+    position: relative;
+    right: calc(46% - 20px);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('/MOBILE_FIRTS/icons/clock.svg');
+    background-position: center;
+    background-size: cover; /*Centra la imagen*/
+    background-repeat: no-repeat; /*evita que se  repita la imagen cuando el contenedor se haga mas grande*/
+}
+.producto-tarjetas--contenedor .ojo{
+    position: relative;
+    right: calc(46% - 20px);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 22px;
+    height: 16px;
+    background-image: url('/MOBILE_FIRTS/icons/eye.svg');
+    background-position: center;
+    background-size: cover; /*Centra la imagen*/
+    background-repeat: no-repeat; /*evita que se  repita la imagen cuando el contenedor se haga mas grande*/
+}
+.producto-tarjetas--contenedor .dollar-sim{
+    position: relative;
+    right: calc(46% - 20px);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 17px;
+    height: 19px;
+    background-image: url('/MOBILE_FIRTS/icons/dollar-sign.svg');
+    background-position: center;
+    background-size: cover; /*Centra la imagen*/
+    background-repeat: no-repeat; /*evita que se  repita la imagen cuando el contenedor se haga mas grande*/
+}
+.producto-tarjetas--contenedor .check{
+    position: relative;
+    right: calc(46% - 20px);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('/MOBILE_FIRTS/icons/check-circle.svg');
+    background-position: center;
+    background-size: cover; /*Centra la imagen*/
+    background-repeat: no-repeat; /*evita que se  repita la imagen cuando el contenedor se haga mas grande*/
+}
+
+/*---------------------------------------------------Imagenes articulos--------------------------------------------------*/
+/*-----------------------------------------------------hacia arriba------------------------------------------------------*/
+
+
+.bitcoin-img-contenedor{
+    width: 100%;
+    height: 387px;
+    min-width: 320px;
+    max-height: 387px;
+    background-image: url('https://i.ibb.co/gtXkWH3/bitcoinbaby.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bitcoin-img-contenedor h2{
+  padding-top: 64px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: white;
+  text-align: center;
+  }
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+.main-planes-contenedor{
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+}
+.main-planes-contenedor .planes--introduccion{
+    padding-top: 50px;
+    font-style: normal;
+    width: 90%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.planes--introduccion h2{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+.planes--introduccion p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+.planes-contenedor--slider{
+    display: flex;
+    height: 315px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.planes-contenedor--tarjetas{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    height: 250px;
+    min-width: 230px;
+    max-width: 300px;
+    margin: 50px 5px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.Recomendado{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 9px;
+    top: -15px;
+    left: calc(50% - 60px);
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 4px 8px rgb(0 0 0);
+}
+.Recomendado2{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 9px;
+    top: -15px;
+    left: calc(50% - 60px);
+    background-color: #40E0D0;
+    border-radius: 8px;
+    color: var(--just-white);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 4px 8px rgb(0 0 0);
+}
+.planes-tarjeta--precio{
+    font-family: 'Inter', sans-serif;
+    font-size: 5.2rem;
+    line-height: 6.1rem;
+    font-weight: bold;
+    letter-spacing: 0.08rem;
+}
+.planes-tarjeta--titulo{
+  padding-top: 31px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  padding-bottom: 1.2rem;
+}
+.planes-tarjeta--precio span{
+    position: relative;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    top: -30px;
+    right: -10px;
+    max-width: 30px;
+}
+.planes-tarjeta--ahorro{
+    padding-top: 15px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #757575;
+}
+.planes-tarjeta-ca{
+    width: 150px;
+    height: 48px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px var(--bitcoin-orange) solid;
+    background-color: var(--just-white);
+    color: var(--black);
+}
+.planes-tarjeta-ca span{
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 20px;
+    height: 20px;
+    background-image: url('/MOBILE_FIRTS/icons/orange-right-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+
+footer section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+footer .izquierda ul{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  list-style: none;
+}
+.izquierda li{
+    margin: 10px 0;
+}
+.izquierda a{
+  text-decoration: none;
+  color: var(--just-white)
+}

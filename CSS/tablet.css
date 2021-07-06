@@ -1,0 +1,13 @@
+.contenedor--tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.planes-contenedor--slider{
+    justify-content: center;
+}
+.bitcoin-img-contenedor{
+    background-image: url('https://i.ibb.co/kSSg2W2/bitcoinbaby2x.jpg');
+}
